@@ -51,8 +51,8 @@ helm repo update
 ```
 ### 8. Install Prometheus and Grafana
 ```bash
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo add grafana https://grafana.github.io/helm-charts
+helm install grafana grafana/grafana
+helm install prometheus prometheus-community/prometheus
 ```
 ### 9.Configure Prometheus
 * Edit the ConfigMap prometheus-server
